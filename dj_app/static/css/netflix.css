@@ -1,0 +1,109 @@
+body{
+    background-image: url('../images/net.jpg');
+}
+header{
+    padding: 12px;
+}
+
+#header-right{
+    justify-content: right;
+    display: flex;
+    
+}
+#header-right button{
+    margin-left: 10px;
+}
+
+main{
+    display:flex ;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.card {
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    border-radius: 10px; 
+    color: white;
+}
+
+#allign-center{
+    text-align: center;
+    
+}
+#main-card-button{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.row1{
+    margin: 0;
+    display: flex;
+    padding: 0;
+
+}
+#name_netflix{
+    color: red
+}
+#drop_down{
+    border: 0.5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+} 
+h3{
+    font-size:medium;
+}
+h1{
+    font-size:60px;
+    font-weight: 700;;
+}
+
+#color_change{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+ 
+#color_chnage2{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#carouselExampleIndicators{
+    height: 250px;
+    width: 300px;
+    justify-content: space-around;
+    
+}
+
+.carousel-inner {
+    display: flex;
+    gap: 1rem;
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .item-card {
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+  }
+  .item-card img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+}
+#id-card{
+    margin: 10px;
+}
