@@ -52,6 +52,14 @@
             <div id="productCarousel" class="carousel slide" data-bs-interval="false">
               <div class="carousel-inner" id="carouselItems">
                 <!-- Items will be dynamically inserted here -->
+                  {% for movie in content %}
+                  <div class="card" style="width: 18rem;">
+                    <img src="{% static movie.cardimg %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">{{movie.cardbodytext}}</p>
+                    </div>
+                  </div>
+                  {% endfor %}
               </div>
               <button class="carousel-control-prev" type="button" onclick="prevItems()">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
