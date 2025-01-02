@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+r_=ldgis_$to3xou=%1trr_i1pnflby=dl5ysv8dxjnr^@@2b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['dj_app/templates'],
+        'DIRS': ['dj_app/templates',f'{BASE_DIR}/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

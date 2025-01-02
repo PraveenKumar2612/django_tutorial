@@ -35,9 +35,17 @@ def net_demo(request):
 
     ]
     
-    
-    
     data={
        "content":top_movies_list
     }
     return render(request=request,template_name='main.html',context=data)
+
+def index_view(request):
+    data={
+        "scentance":"the modulation of h1 tag in html",
+        "img_url":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mo1-1RPPCSd54lH3fcOeOWM1wRHxEZ3C1A&s'
+    }
+    return render(request=request,template_name='index.html',context=data)
+
+def about_us(request):
+    return render(request=request,template_name='aboutus.html')
