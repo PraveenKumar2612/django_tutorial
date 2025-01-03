@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" action="{% url 'home_url' %}">
+    {% csrf_token %}
+    <label for="user_id">user mail id or mobile number</label><br>
+    <input name="user_id" type="text"><br>
+    <label for="password">password</label><br>
+    <input name="password" type="password"><br>
+    <button type="submit">submit</button>
+</form>
+{% endblock %}

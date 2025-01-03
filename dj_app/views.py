@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from dj_app.models import Users
 
 # Create your views here.
 
@@ -49,3 +50,22 @@ def index_view(request):
 
 def about_us(request):
     return render(request=request,template_name='aboutus.html')
+
+def login_id(request):
+    print('sucess')
+    return render(request=request,template_name='login.html')
+
+def home_page(request):
+    print(request.POST['user_id'])
+    user=Users(user_id=request.POST['user_id'],password=request.POST['password'])
+    user.save()
+
+    data={
+        "user_id":request.POST['user_id'],
+        "password":request.POST['password']
+    }
+    return render(request=request,template_name='home.html',context=data)
+
+def orm(request):
+    return render(request=request,template_name='home.html')
+

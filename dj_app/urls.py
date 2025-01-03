@@ -19,8 +19,9 @@ from django.urls import path
 from dj_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('net/',views.net_demo),
-    path('idx/',views.index_view),
+    path('net/',views.net_demo,name="netflix_url"),
+    path('idx/',views.index_view,name="index_url"),
     path('about/',views.about_us,name="about_url"),
+    path('login/',views.login_id,name="login_url"),
+    path('home/',views.home_page,name="home_url"),
 ]
